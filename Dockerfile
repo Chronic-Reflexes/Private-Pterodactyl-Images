@@ -4,7 +4,7 @@
 # ----------------------------------
 FROM quay.io/parkervcp/pterodactyl-images:base_debian
 
-LABEL author="Michael Parker" maintainer="parker@pterodactyl.io"
+LABEL author="Chronic Reflexes" maintainer="https://discord.gg/Ee9a5xY"
 
 ## install reqs
 RUN dpkg --add-architecture i386 \
@@ -20,7 +20,7 @@ RUN cd /tmp/ \
  && mv rcon-0.6.0-amd64_linux/rcon /usr/local/bin/
  
 
-USER        container
+USER        999
 ENV         HOME /home/container
 WORKDIR     /home/container
 
