@@ -18,7 +18,7 @@ RUN cd /tmp/ \
  && curl -sSL https://github.com/gorcon/rcon-cli/releases/download/v0.6.0/rcon-0.6.0-amd64_linux.tar.gz > rcon.tar.gz \
  && tar xvf rcon.tar.gz \
  && mv rcon-0.6.0-amd64_linux/rcon /usr/local/bin/
- 
+ && useradd -u -o 999 container
 
 USER        container
 ENV         HOME /home/container
