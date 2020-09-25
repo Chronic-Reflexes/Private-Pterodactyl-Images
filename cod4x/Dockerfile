@@ -20,6 +20,7 @@ RUN cd /tmp/ \
  && mv rcon-0.6.0-amd64_linux/rcon /usr/local/bin/
 
 RUN usermod -u 999 container
+RUN chmod -R 777 /home
 
 USER        container
 ENV         HOME /home/container
