@@ -19,7 +19,7 @@ RUN cd /tmp/ \
  && tar xvf rcon.tar.gz \
  && mv rcon-0.6.0-amd64_linux/rcon /usr/local/bin/
 
-RUN useradd -u -o 999 container
+RUN useradd -uo 999 container
 
 USER        container
 ENV         HOME /home/container
