@@ -4,7 +4,7 @@
 # ----------------------------------
 FROM quay.io/parkervcp/pterodactyl-images:base_debian
 
-LABEL author="Chronic Reflexes" maintainer="https://discord.gg/Ee9a5xY"
+LABEL author="Chronic Reflexes" maintainer="Midnightgg@gmail.com"
 
 ## install reqs
 RUN dpkg --add-architecture i386 \
