@@ -20,7 +20,7 @@ RUN cd /tmp/ \
  && mv rcon-0.6.0-amd64_linux/rcon /usr/local/bin/
  
 
-USER        999
+USER        container
 ENV         HOME /home/container
 WORKDIR     /home/container
 
