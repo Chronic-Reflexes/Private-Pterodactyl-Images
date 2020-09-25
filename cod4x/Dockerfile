@@ -19,8 +19,10 @@ RUN cd /tmp/ \
  && tar xvf rcon.tar.gz \
  && mv rcon-0.6.0-amd64_linux/rcon /usr/local/bin/
 
+export HOME=/mnt/server
 RUN usermod -u 999 container
-RUN chmod -R 777 /home
+export SCREENDIR=$HOME/.screen
+RUN chmod -R 777 /mnt/server
 
 USER        container
 ENV         HOME /home/container
